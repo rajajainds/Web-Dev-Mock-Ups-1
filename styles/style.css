@@ -305,12 +305,8 @@ nav ul{
 
 }
 
-/* for mini devices, landscape*/
-@media only screen and (min-width:600px){
 
-}
-
-
+/* this webpage is same for all large devices */
 /*  medium devices */
 @media only screen and (min-width:768px){
     

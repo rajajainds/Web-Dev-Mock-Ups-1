@@ -1,7 +1,327 @@
+/* all set to initial without margin , padding */
 *{
 
 margin: 0;
 padding: 0;
-background-color: #c3bfbf;
+background-color: #edf1fd;
+font-family: poppins;
+box-sizing: border-box;
+color:rgb(86, 82, 82);
+
 }
 
+
+html{
+    font-size:16px;
+}
+
+/* changng colors of social media icons in footer */
+i{
+    color:black;
+    
+}
+
+.fa-bars{
+    font-size:25px;
+}
+
+
+/* styling the body tag  */
+body{
+    height:100vh;
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1vh;
+
+}
+
+/* list items styling  */
+li{
+    list-style-type:none;
+    cursor:pointer;
+}
+
+/* hyper links styling */
+
+a{
+    text-decoration: none;
+
+}
+
+/* styling buttons on web page */
+
+button{
+    background-color: rgb(18,155,155);
+padding: 0.5vw 2vw ;
+cursor: pointer;
+color:white; 
+border:1px solid white;
+border-radius: 5px;
+width:fit-content;
+font-weight: 600;
+}
+
+/* button hover styling effects  */
+button:hover{
+    background-color: white;
+    border:1px solid black;
+    color:black;
+}
+
+
+/*sidebar menu for small screens  */
+
+
+#sidebar-btn{
+    display:none;
+    
+}
+
+#sidebar-btn-label{
+    position:fixed;
+    z-index:3;
+}
+
+.sidebar ul{
+    list-style-type: none;
+    background-color: black;
+    display:list-item;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size:1.5rem;
+    gap:1vh;
+}
+
+
+.sidebar ul li { 
+    
+    display:inline;
+    background-color: black;
+}
+
+
+.sidebar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-menu{
+    font-size:1rem;
+    position:fixed;
+    color:white;
+    font-weight:400;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: black;
+    width:20vw;
+    height:30vh;
+    top:-30vh;
+    transition: top 0.3s ease;
+    z-index: 2;
+}
+
+
+
+
+#sidebar-btn:checked ~.sidebar-menu{
+    top:0;
+}
+
+
+/* navgiation bar and header  styling */
+
+.header{
+display:flex;
+padding-left: 5vw;
+padding-right:5vw;
+
+}
+
+nav{
+    display:flex;
+    width:100%;
+    justify-content: space-around;
+    align-items:center;
+}
+
+/* logo styling */
+nav .logo{
+
+    font-weight:700;
+    font-size:3rem;
+}
+
+/* navigation bar menu items */
+nav ul{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    font-weight: 500;
+    width:40vw;
+}
+
+/* styling nav links  */
+nav ul li:hover{
+ background-color: white;
+ color:black;
+ font-weight: 900;
+ text-decoration: underline;
+}
+
+/* styling search box and button */
+.search-box{
+display:flex;
+gap:2vw;
+}
+
+/* styling input inside search box */
+input{
+    color:black;
+    font-weight: 600;
+    background-color: white;
+    padding:0.5vw;
+    width:8vw;
+}
+
+
+/* styling hero section  */
+.hero-section{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:4vw;
+    margin-left:2vw;
+    margin-right:2vw;
+    
+}
+
+
+/* styling left hero division  */
+
+.left-hero-division{
+    font-size: 1.5rem;
+}
+
+.left-hero-division p{
+font-weight:400;
+}
+.left-hero-division span{
+ color:rgb(63, 197, 152);
+ font-size:2rem ;
+}
+
+.left-hero-division span:first-child{
+ font-size:3.3rem ;
+}
+
+
+/* styling right hero division  */
+
+.right-hero-division{
+  display:flex;
+  flex-direction:column;
+  gap:3vh;
+  align-items: center;
+  
+}
+
+.right-hero-division img{
+    border-radius: 50%;
+}
+
+
+/* styling footer  */
+footer{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 1vh;
+}
+
+footer ul{
+    display:flex;
+    gap:3vw;
+}
+
+/* making responsive */
+/* for phones ,small devices */
+
+@media only screen and (min-width:600px){
+.sidebar{
+    display:none ;
+}
+
+}
+
+
+@media only screen and (max-width:600px){
+    
+.search-box{
+display:flex;
+gap:1vw;
+flex-flow:wrap;
+justify-content: end;
+}
+
+footer{
+    flex-wrap: wrap;
+}
+
+
+.hero-section{
+    flex-flow:column;
+    align-content:center;
+}
+
+
+.left-hero-division{
+    justify-content:center;
+
+}
+
+.right-hero-division{
+    justify-content:center;
+
+}
+
+
+html{
+    font-size:10px;
+}
+
+
+/* nav bar disappears and menu for sidebar arrives */
+
+nav ul{
+    display:none;
+}
+
+
+
+}
+
+/* for mini devices, landscape*/
+@media only screen and (min-width:600px){
+
+}
+
+
+/*  medium devices */
+@media only screen and (min-width:768px){
+    
+}
+
+/* for laptops ,desktops large devices*/
+@media only screen and (min-width:992px){
+    
+}
+
+/* for televisions or large screens */
+@media only screen and (min-width:1200px){
+    
+}

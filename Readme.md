@@ -27,7 +27,7 @@ A simple begineer friendly practice project for basic HTML,CSS and web basics.
 ## ⚙️ Installation
 ```bash
 # 1. Clone the repository
-git clone [//github repository](https://github.com/rajajainds/Web-Dev-Mock-Ups-1)
+git clone https://github.com/rajajainds/Web-Dev-Mock-Ups-1
 
 # 2. Navigate into the project folder
 cd Web-Dev-Mock-Ups-1
